@@ -30,7 +30,7 @@ const saveFocusHistory = async () => {
   try {
     await AsyncStorage.setItem("focusHistory", JSON.stringify(focusHistory))
   } catch (e) {
-    console.log(e);
+    
   }
 };
 const loadFocusHistory = async () => {
@@ -41,7 +41,7 @@ const loadFocusHistory = async () => {
       setFocusHistory(JSON.parse(history));
     }
   } catch (e) {
-    console.log(e);
+    
   }
 }
 
